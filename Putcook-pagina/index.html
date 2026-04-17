@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUTCOOK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <script>
+function abrirMenu() {
+  document.getElementById("menu-lateral").classList.add("active");
+  document.getElementById("overlay").classList.add("active");
+}
+
+function cerrarMenu() {
+  document.getElementById("menu-lateral").classList.remove("active");
+  document.getElementById("overlay").classList.remove("active");
+}
+</script>
+
+<div id="overlay" onclick="cerrarMenu()"></div>
+
+
+<div id="menu-lateral">
+
+  <div class="menu-header">
+    <h3>Iniciar sesión</h3>
+    <span onclick="cerrarMenu()">✖</span>
+  </div>
+
+  <ul>
+    <h4> Inicio</h4>
+    <li><a href="#Inicio" onclick="cerrarMenu()"> Inicio</a></li>
+
+
+    <h4>Promociones</h4>
+    <li><a href="#Promos para 1" onclick="cerrarMenu()"> Promos para 1</a></li>
+    <li><a href="#Promos para 1" onclick="cerrarMenu()"> Promos Grupales</a></li>
+    <li><a href="#Yape Promos" onclick="cerrarMenu()"> Yape Promos</a></li>
+
+
+    <h4>Carta</h4>
+    <li><a href="#Platillos" onclick="cerrarMenu()"> Platillos</a></li>
+    <li><a href="#bebidas" onclick="cerrarMenu()"> Bebidas</a></li>
+    <li><a href="#postres" onclick="cerrarMenu()"> Postres</a></li>
+  </ul>
+
+</div>
+  
+<header class="kfc-header">
+
+  <div class="container">
+
+    <div class="top-bar">
+      <div class="left">
+        <button class="menu-btn" onclick="abrirMenu()">☰</button>
+        <img src="logo.png" width="70" height="33" alt="logo Putcook">
+
+      </div>
+
+      <div class="center">
+        <div class="search-box">
+          <input type="text" placeholder="Buscar...">
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="auth">
+          <a href="#">Iniciar sesión</a>
+          <a href="#">Registro</a>
+        </div>
+
+        <div class="cart">
+          🛒 S/ 0.00
+        </div>
+      </div>
+    </div>
+
+    <nav class="bottom-bar">
+      <div class="container">
+         <a href="#" class="active">Carta</a>
+        <a href="#">Promociones</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+   
+<main>
+    <section class="info">
+
+        <img class="bg-2" src="images/bg-2.png" alt="">
+
+            <div class="info-container">
+
+            <div class="info-img">
+                <img src="images/breakfast.png" alt="">
+            </div>
+
+            <div class="info-txt">
+                <a href="#" class="btn-1"></a>
+            </div>
+        </div> 
+
+    </section>
+
+<section id="Platillos" class="container">
+  <h2>Platillos</h2>
+
+  <div class="scroll-wrapper">
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="b1.jpeg" alt="Pollo a la brasa">
+        <h3>Pollo a la brasa</h3>
+        <p class="precio">S/20</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="b5.jpeg" alt="Lomo saltado">
+        <h3>Lomo saltado</h3>
+        <p class="precio">S/22</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="b7.jpeg" alt="Chaufa">
+        <h3>Chaufa</h3>
+        <p class="precio">S/19</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="broaster.jpeg" alt="Broaster">
+        <h3>Broaster</h3>
+        <p class="precio">S/17</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="ceviche.jpeg" alt="Ceviche">
+        <h3>Ceviche</h3>
+        <p class="precio">S/15</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="causa1.jpeg" alt="Causa limeña">
+        <h3>Causa limeña</h3>
+        <p class="precio">S/15.50</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="anticucho.jpeg" alt="Anticucho">
+        <h3>Anticucho</h3>
+        <p class="precio">S/9</p>
+
+        <button class="add-btn">+</button>
+      </div>
+  </div>
+
+        <div class="btn-2" id="load-more" ></div>
+</section>
+
+  <section id="bebidas" class="container">
+    <h2>Bebidas</h2>
+
+    <div class="scroll-wrapper">
+
+    <div class="box-container">
+
+      <div class="box">
+         <img src="be1.webp" alt="Inca Kola Zero Azúcar 500 ml">
+         <h3>Inca Kola Zero Azúcar 500 ml</h3>
+         <p class="precio">S/2.50</p>
+
+         <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+         <img src="be2.webp" alt="Kola Zero Azúcar 1L">
+         <h3>Inca Kola Zero Azúcar 1L</h3>
+         <p class="precio">S/6.99</p>
+
+         <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+         <img src="be3.webp" alt="Inca Kola Zero Azúcar 1.5L">
+         <h3>Inca Kola Zero Azúcar 1.5L</h3>
+         <p class="precio">S/10</p>
+
+         <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+         <img src="b4.webp" alt="Coca-Cola Zero Azúcar 500ml">
+         <h3>Coca-Cola Zero Azúcar 500ml</h3>
+         <p class="precio">S/2.50</p>
+
+         <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+         <img src="b5.webp" alt="Coca-Cola Zero Azúcar 1L">
+         <h3>Coca-Cola Zero Azúcar 1L</h3>
+         <p class="precio">S/6.99</p>
+
+         <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+         <img src="b6.webp" alt="Fanta Naranja 500ml">
+         <h3>Fanta Naranja 500ml</h3>
+         <p class="precio">S/2.50</p>
+
+         <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+         <img src="b7.webp" alt="Sprite Original 500 ml">
+         <h3>Sprite Original 500 ml</h3>
+         <p class="precio">S/2.50</p>
+
+         <button class="add-btn">+</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="postres" class="container">
+     <h2>Postres</h2>
+     <div class="scroll-wrapper">
+
+     <div class="box-container">
+
+      <div class="box">
+        <img src="p1.jpg" alt="Pastel 3 leches">
+        <h3>Pastel 3 leches</h3>
+        <p class="precio">S/6.90</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="p2.webp" alt="Torta trufada">
+        <h3>Torta trufada</h3>
+        <p class="precio">S/9.90</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="p3.png" alt="Pie de manzana">
+        <h3>Pie de manzana</h3>
+        <p class="precio">S/7.50</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="p4.webp" alt="Flan de queso crema">
+        <h3>Flan de queso crema</h3>
+        <p class="precio">S/4.99</p>
+
+        <button class="add-btn">+</button>
+
+      </div>
+
+      <div class="box">
+        <img src="p6.jpg" alt="Arroz con leche">
+        <h3>Arroz con leche</h3>
+        <p class="precio">S/5.50</p>
+        
+        <button class="add-btn">+</button>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+        <div class="app-txt">
+
+            <h2></h2>
+            
+            <div class="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+        </div>
+
+    <section class="info-empresa container">
+
+    <div class="social-content container">
+        <span>Mas informacion</span>
+    </div>
+
+<footer class="footer">
+  <div class="footer-content container">
+
+    <div class="link-column">
+      <h3>Contacto & Atención 
+        al Cliente</h3>
+      <ul>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="#">gmail: putcook@gmail.com</a></li>
+        <li><a href="#">Telefono: 505-5505</a></li>
+      </ul>
+    </div>
+    
+    <div class="link-column">
+      <h3>Sobre Nosotros</h3>
+      <ul>
+        <li><a href="#">Locales</a></li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+      </ul>
+    </div>
+
+    <div class="link-column">
+      <h3>Políticas & Términos</h3>
+      <ul>
+        <li><a href="#">Políticas de privacidad</a></li>
+        <li><a href="#">Términos y condiciones de la web</a></li>
+      </ul>
+    </div>
+
+   <div class="kfc-form-container">
+    <h3>Vuélvete Premium!</h3>
+    <form class="kfc-form">
+        <div class="kfc-row">
+            <input type="text" placeholder="Nombre" class="kfc-field">
+            <input type="text" placeholder="Apellido" class="kfc-field">
+        </div>
+
+        <div class="kfc-group-border">
+            <select class="kfc-select">
+                <option>DNI</option>
+                <option>CE</option>
+            </select>
+            <input type="text" placeholder="Número de documento" class="kfc-field-inner">
+        </div>
+
+        <input type="email" placeholder="Correo electrónico" class="kfc-field full-width">
+
+        <button type="submit" class="kfc-btn-submit">Enviar</button>
+    </form>
+   </div>
+
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
